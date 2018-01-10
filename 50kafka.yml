@@ -43,7 +43,9 @@ spec:
         - --override
         -   log.dirs=/var/lib/kafka/data/topics
         - --override
-        -   auto.create.topics.enable=false
+        -   auto.create.topics.enable=true
+        - --override
+        -   default.replication.factor=3
         resources:
           requests:
             cpu: 100m
